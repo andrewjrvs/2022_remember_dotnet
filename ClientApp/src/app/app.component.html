@@ -1,0 +1,19 @@
+<cvbn-nav-bar>
+  <cvbn-nav-item slot="item" routerLink="/" label="Home" icon="🏠"
+    [routerLinkActive]="['link-active']" [routerLinkActiveOptions]="{exact: true}"
+    #home="routerLinkActive" [isActive]="home.isActive"
+  ></cvbn-nav-item>
+  <cvbn-nav-item slot="item" routerLink="/counter" label="counter" icon="🗃️"
+    [routerLinkActive]="['link-active']" [routerLinkActiveOptions]="{exact: true}"
+    #counter="routerLinkActive" [isActive]="counter.isActive"
+  ></cvbn-nav-item>
+  <cvbn-nav-item slot="item" routerLink="/verses" label="verses" icon="⛪"
+    [routerLinkActive]="['link-active']" [routerLinkActiveOptions]="{exact: true}"
+    #fetch="routerLinkActive" [isActive]="fetch.isActive"
+  ></cvbn-nav-item>
+</cvbn-nav-bar>
+<main>
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+</main>

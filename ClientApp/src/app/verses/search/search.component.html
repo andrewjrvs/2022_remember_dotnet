@@ -1,0 +1,11 @@
+<input #search type="text" />
+
+<div *ngIf="results$ | async as results">
+    <div>details limit: {{$any(results)?.data?.limit}} total: {{$any(results)?.data?.total}}</div>
+    <dl>
+        <ng-container *ngFor="let vrs of $any(results)?.data.verses">
+            <dt>{{vrs.reference}}</dt>
+            <dd>{{vrs.text}}</dd>
+        </ng-container>
+    </dl>
+</div>

@@ -1,5 +1,18 @@
-@url = https://localhost:7148
+@url = https://localhost:44454
 
 ###
 
 GET {{url}}/weatherforecast
+
+###
+
+GET {{url}}/api/verses
+
+
+###
+
+GET {{url}}/api/verses/search?q=Greater+Love
+
+###
+
+GET {{url}}/swagger/v1/swagger.json
